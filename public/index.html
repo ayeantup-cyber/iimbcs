@@ -1,1 +1,53 @@
-h
+<!DOCTYPE html>
+<html lang="en" data-theme="mid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIMBCS</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Socket.IO will load when server exists -->
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+
+  <header class="app-header">
+    <img src="header.png" alt="IIMBCS Header" class="header-image">
+  </header>
+
+  <main id="chat-window"></main>
+
+  <div id="input-bar">
+    <textarea
+      id="msg-input"                                                                          placeholder="Message or paste code..."
+    ></textarea>
+
+    <button id="send-btn">➤</button>
+  </div>
+
+  <button id="menu-btn">☰</button>
+
+  <nav id="side-menu">
+
+    <h3>IIMBCS</h3>
+
+    <div class="menu-section">
+      <label>Theme</label>
+      <button class="theme-btn" data-theme="light">Light</button>
+      <button class="theme-btn" data-theme="mid">Mid</button>
+      <button class="theme-btn" data-theme="dark">Dark</button>
+    </div>
+
+    <div class="menu-section">
+      <label>User</label>
+      <div id="user-display"></div>
+    </div>
+
+  </nav>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
