@@ -43,12 +43,16 @@ overflow:hidden;
 .app-header{
 height:120px;
 overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+background:var(--bg);
 }
 
 .header-image{
 width:100%;
 height:100%;
-object-fit:cover;
+object-fit:contain;
 }
 
 #chat-window{
@@ -168,4 +172,4 @@ margin-top:20px;
 width:100%;
 margin-top:6px;
 padding:8px;
-} 
+}
